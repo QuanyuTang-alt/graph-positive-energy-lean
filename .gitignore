@@ -1,0 +1,10 @@
+.lake/
+.DS_Store
+__pycache__/
+*.olean
+*.ilean
+*.trace
+*.o
+*.pdf
+*.tex
+*.tar

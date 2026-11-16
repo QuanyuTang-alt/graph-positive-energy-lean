@@ -1,0 +1,9 @@
+P29 graph positive energy supporting formalization
+Maintained by Quanyu Tang. New code and documentation: Apache-2.0.
+Original paper authors: Yinchen Liu, Quanyu Tang. Original manuscript/PDF/TeX are not distributed or relicensed.
+
+Finite certificate statements were constructed with reference to AppendixA of arXiv:2606.30996v1 and the public Sage script applications/verify_line_graph.sage from QuanyuTang/graph-p-energy-certificates @9ab79d5385f8c17579e4b6b51b31da92be4807da. This snapshot does not vendor or execute Sage as a trusted proof dependency. Exact rational certificate identities are checked by Lean's kernel. Attribution to Yinchen Liu and Quanyu Tang retained; repository/formalization endorsement is not asserted.
+
+AI assistance actually used here: Doubao Work, no verified model identifier. Lean/Lake kernel checking, standard-library Python statement generation, GitHub CLI publication. No independent human/source-author review of this Lean code occurred. Source-paper AI disclosures are not this formalization's tools or models.
+
+Lean, mathlib and all transitive pinned dependencies retain their respective licenses. Dependencies are fetched separately; no cache or compiled artifacts are distributed.

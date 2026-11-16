@@ -1,0 +1,17 @@
+{
+  "algorithm": "SHA256",
+  "paper": "arXiv:2606.30996v1",
+  "source_fingerprints": {
+    "latest-v1-PDF": "d3f84290c7f855a00457d2485224d8fd4c118d2c20e1f033619ff7227261ba01",
+    "arxiv-v1-source-archive": "a862f06e21e61f6412293d406cee0edef1647ef7f2e9b1813da76d04183f8949",
+    "arxiv-v1-TeX-member": "c2ae43abbff8876e12fe5c4536523dd252836cee9aba2ee42cb66236e90dd519",
+    "reference-Sage-script": "6ea8e4df1106d4dfbb5f910326b5459c84576d5a95b0f01c11ce34e30fe8a5c1"
+  },
+  "lean_files": {
+    "GraphPositiveEnergy/EnergyIdentities.lean": "8f85d8e6703846aa455f69f024b494f15c203db2267e3bcb3ea9e1a7ae1aba07",
+    "GraphPositiveEnergy/EnvelopeCertificates.lean": "d16145353c3d18a3e099de2e21527ddc5b59fef7269ab56c42e72c6e6f5fb8b1",
+    "GraphPositiveEnergy/GraphMatrices.lean": "57d658aecbfb57702c8f940fd8c9896506196e1340ba6c46761988ccd6055c93",
+    "GraphPositiveEnergy/LocalMoments.lean": "2be976cfd94676035d5276491ae29ef854bb1de9315b2b34f8727b89cf898bfb",
+    "GraphPositiveEnergy/ScalarChecks.lean": "7cd2a2fd9b62313e1b83ab7b6ac4d8217d70739cbe9690522e5b9d333133e1e6"
+  }
+}

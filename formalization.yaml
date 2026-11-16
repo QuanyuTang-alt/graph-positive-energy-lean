@@ -1,0 +1,60 @@
+version: v0.4
+project:
+  name: "P29 graph positive energy — checked partial foundations"
+  description: "Actual finite graph spectra, signless incidence Gram, odd-energy identity and kernel-checked finite Appendix certificates; all principal path comparisons remain unformalized."
+  authors: ["Quanyu Tang"]
+  responsible_maintainers: ["Quanyu Tang"]
+  license: Apache-2.0
+classification:
+  arxiv: [math.CO]
+  msc2020: [05C50, 05C35, 15A18]
+sources:
+  - title: "Path-Minimality for Positive p-Energies, Laplacian-Type Spectra, and Line Graphs"
+    authors: ["Yinchen Liu", "Quanyu Tang"]
+    type: paper
+    id: "arXiv:2606.30996v1"
+    location: "https://arxiv.org/abs/2606.30996v1"
+    relationship: formalizes
+    author_endorsement: not-contacted
+    note: "Checked supporting foundations only; no source-author code review."
+  - title: "Graph p-energy certificates"
+    authors: ["Yinchen Liu", "Quanyu Tang"]
+    type: repository
+    location: "https://github.com/QuanyuTang/graph-p-energy-certificates"
+    relationship: reference
+    note: "Inspected at 9ab79d5385f8c17579e4b6b51b31da92be4807da; Sage is not a proof dependency."
+status:
+  scope: "PARTIAL B; Theorems3.2/3.3/3.6/3.7/3.17/3.18 and Corollaries3.8/3.10/3.11/3.13 not formalized."
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "Doubao Work"
+      tool_setup: "Lean/Lake, pinned mathlib, standard-library Python exact statement generation, GitHub CLI. No verified model name."
+  notes: "AI-assisted informal-proof reading, support implementation, generation and same-assistant semantic checks; generated proofs checked by Lean, not Python trust."
+review:
+  status: self-assessed
+  reviewers: []
+  notes: "Same-assistant support source/definition review and kernel axiom audit; no independent human or source-author review; main acceptance not passed."
+fidelity:
+  divergences: "Complete supporting declarations only; mathlib incidence includes zero nonedge columns; exact finite certificates do not prove infinite spectral/deletion steps."
+alignment:
+  namespace: GraphPositiveEnergy
+  statements:
+    - source: "Theorem3.3 proof: actual odd-energy half-total substep"
+      lean: GraphPositiveEnergy.odd_positive_energy_half_total
+      module: GraphPositiveEnergy.EnergyIdentities
+      status: proved-support
+    - source: "AppendixA: L=6 exact finite fifth moment"
+      lean: GraphPositiveEnergy.local_moment_6
+      module: GraphPositiveEnergy.LocalMoments
+      status: proved-support
+    - source: "AppendixA: six finite envelope certificates"
+      lean: GraphPositiveEnergy.envelope_nonneg_4
+      module: GraphPositiveEnergy.EnvelopeCertificates
+      status: proved-support
+    - source: "All six new theorems and four application corollaries"
+      status: not-formalized
